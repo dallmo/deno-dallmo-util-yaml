@@ -22,8 +22,20 @@ async function dallmo_util_yaml( config_file: string ){
 
 }; // function dallmo_yaml
 ////////////////////////////////////////////////////////////////////////////////
+/*
+ * @function test
+ * @params {undefined} - no inputs required
+ * @returns {string}
+ */
+function test(): string{
+
+  return "ok";
+
+}// function test
+////////////////////////////////////////////////////////////////////////////////
 export {
-  
+ 
+  test, 
   dallmo_util_yaml
 
 }; // export

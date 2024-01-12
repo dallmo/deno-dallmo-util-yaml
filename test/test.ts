@@ -2,8 +2,15 @@
 import { assertEquals } from "../deps.ts";
 
 // the module to be tested
-import { dallmo_util_yaml } from "../mod.ts";
+import { dallmo_util_yaml, test } from "../mod.ts";
 
+//////////////////////////////////////////////////////////////
+Deno.test( "test reaching dallmo-util-yaml", () => {
+
+  assertEquals( test(), "ok");
+
+}); // Deno.test
+//////////////////////////////////////////////////////////////
 /**
  * the config file, also located in the same directory as this test file,
  *  should be :
@@ -48,3 +55,5 @@ Deno.test("test dallmo_util_yaml", async (t) => {
   //---------------------------------------------------------
 
 }); // deno test
+//////////////////////////////////////////////////////////////
+
