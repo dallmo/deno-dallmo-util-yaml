@@ -1,4 +1,4 @@
-# dallmo-yaml
+# overview
 
 - a simple yaml file reader
 - re-written in typescript, migrated from nodejs to base only on deno standard libraries
