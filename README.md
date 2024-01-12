@@ -2,7 +2,7 @@
 
 - a simple yaml file reader
 - re-written in typescript, migrated from nodejs to base only on deno standard libraries
-
+- published to deno land in : https://deno.land/x/dallmo_util_yaml
 
 ## dependencies
 
