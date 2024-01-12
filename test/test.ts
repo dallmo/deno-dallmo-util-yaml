@@ -2,7 +2,7 @@
 import { assertEquals } from "../deps.ts";
 
 // the module to be tested
-import { dallmo_yaml } from "../mod.ts";
+import { dallmo_util_yaml } from "../mod.ts";
 
 /**
  * the config file, also located in the same directory as this test file,
@@ -17,11 +17,11 @@ import { dallmo_yaml } from "../mod.ts";
  */
 
 // Compact form: name and function
-Deno.test("test dallmo_yaml", async (t) => {
+Deno.test("test dallmo_util_yaml", async (t) => {
 
   // read and parse the config file
   const config_file: string = "./config.yaml";
-  const config_obj: any = await dallmo_yaml( config_file );
+  const config_obj: any = await dallmo_util_yaml( config_file );
 
   console.log( "config_obj : ", config_obj );
 

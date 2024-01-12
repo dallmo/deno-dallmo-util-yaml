@@ -10,7 +10,7 @@ import { yaml_parse } from "./deps.ts";
  * @param {string} config_file - path and filename to the yaml file to read
  * @returns {Object} - return the result in the form of json object
  */
-async function dallmo_yaml( config_file: string ){
+async function dallmo_util_yaml( config_file: string ){
   
   // read file content from config file
   const file_content: string = await Deno.readTextFile( config_file );
@@ -24,6 +24,7 @@ async function dallmo_yaml( config_file: string ){
 ////////////////////////////////////////////////////////////////////////////////
 export {
   
-  dallmo_yaml
+  dallmo_util_yaml
 
 }; // export
+
