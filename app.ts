@@ -16,7 +16,7 @@ async function dallmo_util_yaml( config_file: string ){
   const file_content: string = await Deno.readTextFile( config_file );
 
   // parse the yaml file content as json
-  const config_obj: unknown = await yaml_parse( file_content );
+  const config_obj: any = await yaml_parse( file_content );
 
     return config_obj;
 

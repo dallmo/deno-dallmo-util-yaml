@@ -20,15 +20,29 @@ Deno.test( "test reaching dallmo-util-yaml", () => {
  *  ok2: "abc"   // ascii string
  *  ok3: "abc def"   // ascii string with space
  *  ok4: 真係得？ // UTF-8 string
- * 
+ * array_1:
+ *  - 123 // number
+ *  - abc // string
  */
+
+interface Conf_Obj_Child_1 {
+  ok1: number;
+  ok2: string;
+  ok3: string;
+  ok4: string;
+}; // interface
+
+interface Conf_Obj {
+  ok: Conf_Obj_Child_1;
+  array_1: any[];
+}; // interface
 
 // Compact form: name and function
 Deno.test("test dallmo_util_yaml", async (t) => {
 
   // read and parse the config file
   const config_file: string = "./config.yaml";
-  const config_obj: any = await dallmo_util_yaml( config_file );
+  const config_obj: Conf_Obj = await dallmo_util_yaml( config_file );
 
   console.log( "config_obj : ", config_obj );
 
