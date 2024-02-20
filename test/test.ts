@@ -1,5 +1,5 @@
 // deno test methods
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "../etc/deps.ts";
 
 // the module to be tested
 import { dallmo_util_yaml, test } from "../mod.ts";
@@ -43,6 +43,11 @@ Deno.test("test dallmo_util_yaml", async (t) => {
   // read and parse the config file
   const config_file: string = "./config.yaml";
   const config_obj: Conf_Obj = await dallmo_util_yaml( config_file );
+
+  // if config cannot be loaded
+  if( Object.keys( config_obj ).length === 0 ){
+    throw new Error("config_obj empty.");
+  }; //
 
   console.log( "config_obj : ", config_obj );
 

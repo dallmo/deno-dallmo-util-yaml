@@ -1,5 +1,5 @@
 
-import { yaml_parse } from "./deps.ts";
+import { yaml_parse } from "./etc/deps.ts";
 
 ////////////////////////////////////////////////////////////////////////////////
 /*
@@ -20,10 +20,12 @@ async function dallmo_util_yaml( config_file: string ): Promise<any>{
   
     // parse the yaml file content as json
     config_obj = await yaml_parse( file_content );
+
   }catch(error){
 
-    const msg = "error in loading config file.";
-    console.error( msg, error.message );
+    console.error( error.message );
+    const msg = "error in loading config file. returning an empty config_obj. action aborted.";
+    console.error( msg );
 
   }finally{
 
