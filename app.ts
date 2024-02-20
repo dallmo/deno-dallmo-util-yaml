@@ -10,15 +10,26 @@ import { yaml_parse } from "./deps.ts";
  * @param {string} config_file - path and filename to the yaml file to read
  * @returns {Object} - return the result in the form of json object
  */
-async function dallmo_util_yaml( config_file: string ){
+async function dallmo_util_yaml( config_file: string ): Promise<any>{
   
-  // read file content from config file
-  const file_content: string = await Deno.readTextFile( config_file );
+  let config_obj: any = {};
 
-  // parse the yaml file content as json
-  const config_obj: any = await yaml_parse( file_content );
+  try{
+    // read file content from config file
+    const file_content: string = await Deno.readTextFile( config_file );
+  
+    // parse the yaml file content as json
+    config_obj = await yaml_parse( file_content );
+  }catch(error){
+
+    const msg = "error in loading config file.";
+    console.error( msg, error.message );
+
+  }finally{
 
     return config_obj;
+
+  }; // try catch
 
 }; // function dallmo_yaml
 ////////////////////////////////////////////////////////////////////////////////
