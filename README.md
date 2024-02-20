@@ -29,14 +29,13 @@ to run test codes :
 
 either : 
 
-run
-```
-deno task test
-```
+1. stay in the project root folder, i.e. `[root]/` ;
+1. run `deno task test` ; 
 
 or : 
 
-1. switch to the folder "test" ; 
+1. switch to the folder `[root]/test` ; 
 1. run `deno test --allow-read` ; 
+
 
 
