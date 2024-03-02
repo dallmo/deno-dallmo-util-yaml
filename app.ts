@@ -47,8 +47,8 @@ function test(): string{
 }// function test
 ////////////////////////////////////////////////////////////////////////////////
 export {
- 
-  test, 
+
+  test,
   dallmo_util_yaml
 
 }; // export

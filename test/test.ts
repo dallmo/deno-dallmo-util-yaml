@@ -2,7 +2,7 @@
 import { assertEquals } from "../etc/deps.ts";
 
 // the module to be tested
-import { dallmo_util_yaml, test } from "../mod.ts";
+import { test, dallmo_util_yaml } from "../mod.ts";
 
 //////////////////////////////////////////////////////////////
 Deno.test( "test reaching dallmo-util-yaml", () => {
