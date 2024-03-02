@@ -2,11 +2,9 @@
 import { yaml_parse } from "./etc/deps.ts";
 
 ////////////////////////////////////////////////////////////////////////////////
-/*
- * 
+/**
  * a simple yaml reader based on deno standard library.
- *
- * @function dallmo_yaml
+ * @function dallmo_util_yaml
  * @param {string} config_file - path and filename to the yaml file to read
  * @returns {Object} - return the result in the form of json object
  */
@@ -35,10 +33,11 @@ async function dallmo_util_yaml( config_file: string ): Promise<any>{
 
 }; // function dallmo_yaml
 ////////////////////////////////////////////////////////////////////////////////
-/*
+/**
+ * for testing connection to this module from parent 
  * @function test
  * @params {undefined} - no inputs required
- * @returns {string}
+ * @returns {string} 
  */
 function test(): string{
 
@@ -50,6 +49,6 @@ export {
 
   test,
   dallmo_util_yaml
-
+  
 }; // export
 
