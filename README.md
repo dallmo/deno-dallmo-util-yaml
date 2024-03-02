@@ -67,10 +67,11 @@ deno run --allow-read test-via-jsr.ts
 to run test codes : 
 
 1. switch to the project root folder, i.e. `[root]/` ;
-1. to test with deno modules
+2. run deno task scripts :
+- to test with dependencies via deno modules : 
   - run `deno task test-deno` ;
-1. to test with jsr
-   - run `deno task test-jsr` ; 
+- to test with dependencies via jsr : 
+  - run `deno task test-jsr` ; 
 
 
 [comments]: --------------------------------------------------
