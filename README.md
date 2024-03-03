@@ -22,7 +22,7 @@ all of deno standard library.
 
 2. create 2 files :
 -  `test-via-deno-modules.ts` ; 
--  `config.yaml` ; ( sample test files can be found inside `test/` )
+-  `config.yaml` ; ( sample test files [can be found inside `test/`][link-3] )
 
 ```
 // this assumes the latest version
@@ -47,7 +47,7 @@ deno add @dallmo/util-yaml
 
 2. create 2 files :
 -  `test-via-jsr.ts` ; 
--  `config.yaml` ; ( sample test files can be found inside `test/` )
+-  `config.yaml` ; ( sample test files [can be found inside `test/`][link-3] )
 
 ```
 import { dallmo_util_yaml } from "@dallmo/util-yaml";
@@ -77,4 +77,4 @@ to run test codes :
 [comments]: --------------------------------------------------
 [link-1]: https://deno.land/x/dallmo_util_yaml
 [link-2]: https://jsr.io/@dallmo/util-yaml
-
+[link-3]: https://github.com/dallmo/deno-dallmo-util-yaml/blob/main/test/config.yaml

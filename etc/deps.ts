@@ -18,13 +18,13 @@ export {
   
   parse as yaml_parse 
 
-} from "https://deno.land/std/yaml/mod.ts";
+} from "https://deno.land/std@0.218.2/yaml/mod.ts";
 ////////////////////////////////////////////////////////////////////////////////
 // for testing
 export { 
 
   assertEquals 
 
-} from "https://deno.land/std/assert/mod.ts";
+} from "https://deno.land/std@0.218.2/assert/mod.ts";
 ////////////////////////////////////////////////////////////////////////////////
 
