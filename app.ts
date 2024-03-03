@@ -36,7 +36,7 @@ async function dallmo_util_yaml( config_file: string ): Promise<any>{
 /**
  * for testing connection to this module from parent 
  * @function test
- * @params {undefined} - no inputs required
+ * @param {undefined} - no inputs required
  * @returns {string} 
  */
 function test(): string{
@@ -51,4 +51,3 @@ export {
   dallmo_util_yaml
   
 }; // export
-
