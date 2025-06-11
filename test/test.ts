@@ -52,23 +52,23 @@ Deno.test("test dallmo_util_yaml", async (t) => {
   console.log( "config_obj : ", config_obj );
 
   //---------------------------------------------------------
-  await t.step("step : test number", async () => {
+  await t.step("step : test number", () => {
     assertEquals( config_obj.ok.ok1, 111 );
   }); // step
   //................................
-  await t.step("step : test ascii string, no space", async () => {
+  await t.step("step : test ascii string, no space", () => {
     assertEquals( config_obj.ok.ok2, "abc" );
   }); // step
   //................................
-  await t.step("step : test ascii string, with space", async () => {
+  await t.step("step : test ascii string, with space", () => {
     assertEquals( config_obj.ok.ok3, "abc def" );
   }); // step
   //................................
-  await t.step("step : test UTF-8 string", async () => {
+  await t.step("step : test UTF-8 string", () => {
     assertEquals( config_obj.ok.ok4, "真係得？" );
   }); // step
   //................................
-  await t.step("step : test array", async () => {
+  await t.step("step : test array", () => {
     assertEquals( config_obj.array_1, [ 123, "abc"] );
   }); // step
   //---------------------------------------------------------
