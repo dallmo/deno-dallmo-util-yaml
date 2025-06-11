@@ -50,7 +50,7 @@ deno add @dallmo/util-yaml
 -  `config.yaml` ; ( sample test files [can be found inside `test/`][link-3] )
 
 ```
-import { dallmo_util_yaml } from "@dallmo/util-yaml";
+import { dallmo_util_yaml } from "jsr:@dallmo/util-yaml";
 
 const config_file = "config.yaml";
 const config_obj = await dallmo_util_yaml( config_file );
@@ -61,6 +61,19 @@ const config_obj = await dallmo_util_yaml( config_file );
 ```
 deno run --allow-read test-via-jsr.ts
 ```
+
+### NOTE : 2025-06-11 updates
+step 1 above is optional if the import is done via :
+```
+import { dallmo_util_yaml } from "jsr:@dallmo/util-yaml";
+```
+
+or, if step 1 is performed, the import can be done via : 
+```
+import { dallmo_util_yaml } from "@dallmo/util-yaml";
+```
+
+but it seems it brings no harm if the import is done with the "jsr:" suffix, whether the module has been added via CLI or not.  The test file `test-via-jsr.ts` has been therefore updated with that prefix, as well as the above sample code for simple copy-n-paste.
 
 
 ## test

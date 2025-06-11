@@ -1,5 +1,8 @@
 {
-  "version": "3",
+  "version": "5",
+  "redirects": {
+    "https://deno.land/x/dallmo_util_yaml/mod.ts": "https://deno.land/x/dallmo_util_yaml@v1.5.2/mod.ts"
+  },
   "remote": {
     "https://deno.land/std@0.218.2/assert/_constants.ts": "a271e8ef5a573f1df8e822a6eb9d09df064ad66a4390f21b3e31f820a38e0975",
     "https://deno.land/std@0.218.2/assert/_diff.ts": "dcc63d94ca289aec80644030cf88ccbf7acaa6fbd7b0f22add93616b36593840",
@@ -68,6 +71,9 @@
     "https://deno.land/std@0.218.2/yaml/schema/json.ts": "0fb9268282d266c24d963e75ef77f51accbbb74f40713a99e83ad621a81bc9ae",
     "https://deno.land/std@0.218.2/yaml/schema/mod.ts": "9bf7ff80c2a246f781bdcab979211d0389760831a974cf5883bf2016567e3507",
     "https://deno.land/std@0.218.2/yaml/stringify.ts": "580f8b2fa56e3233424520d8242f4fc0edf41ac54a6a6d2f6f8e0b6e99cd63c0",
-    "https://deno.land/std@0.218.2/yaml/type.ts": "708dde5f20b01cc1096489b7155b6af79a217d585afb841128e78c3c2391eb5c"
+    "https://deno.land/std@0.218.2/yaml/type.ts": "708dde5f20b01cc1096489b7155b6af79a217d585afb841128e78c3c2391eb5c",
+    "https://deno.land/x/dallmo_util_yaml@v1.5.2/app.ts": "ef8326d7b0cf79244ba21def0f17487928c16e0547e93b35eb5fc0a2af8b255c",
+    "https://deno.land/x/dallmo_util_yaml@v1.5.2/etc/deps.ts": "2e43cd0afd0b1d2c5b5ce924a9521e165c6ad1d6720e9a4ff5b328ae6f7a34c5",
+    "https://deno.land/x/dallmo_util_yaml@v1.5.2/mod.ts": "2b523954750bfb2439c6ff5a175e3878d907f45fef19c040b4fa8de47fdb792f"
   }
 }

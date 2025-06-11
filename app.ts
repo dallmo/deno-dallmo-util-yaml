@@ -19,7 +19,7 @@ async function dallmo_util_yaml( config_file: string ): Promise<any>{
     // parse the yaml file content as json
     config_obj = await yaml_parse( file_content );
 
-  }catch(error){
+  }catch(error:any){
 
     console.error( error.message );
     const msg = "error in loading config file. returning an empty config_obj. action aborted.";
