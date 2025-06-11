@@ -19,7 +19,7 @@ all of deno standard library.
 
 1. in CLI, add the module with :
 ```
-deno add @dallmo/util-yaml
+deno add jsr:@dallmo/util-yaml
 ```
 
 2. create 2 files :
