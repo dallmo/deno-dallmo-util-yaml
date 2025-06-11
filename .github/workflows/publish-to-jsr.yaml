@@ -20,4 +20,6 @@ jobs:
           cd "${GITHUB_WORKSPACE}/etc"
           rm -f deps.ts
           cp deps.jsr.ts deps.ts
-      - run: npx jsr publish
+      # 2025-06-11 : added the suffix "--allow-dirty"
+      #              as it now complains "etc/deps.ts" as uncommitted changes
+      - run: npx jsr publish --allow-dirty
